@@ -23,18 +23,22 @@ Azure Media Services는 비디오 스트리밍을 구현하고 접근성과 배�
 ### 1. 스트리밍 서비스
    <p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/b7c504ee-4c05-4a32-be39-9fb168d683b8"></p>
 </br>
+
 ### 2. 동영상 리스트 표시
 <p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/1c01ae66-0a65-4874-9fd5-b36924fab909"></p>
 
 </br>
+
 ### 3. 동영상 추천 기능
 <p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/85398d98-bd66-4542-8e29-6ede06d6f0ae"></p>
 
 </br>
+
 ### 4. 사용자-댓글 기능
 <p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/6ec13b6c-6c3b-4038-a7e6-5b134b743a17"></p>
 
  </br>
+ 
 ### 5. 동영상 정보
 <p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/29c558d3-3b08-4dda-9d9a-98f5494c9933"></p>
 
