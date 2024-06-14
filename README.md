@@ -4,11 +4,11 @@ Azure에서 제공하는 Media Services를 이용하여 다양한 스트리밍 �
 <br><br>
   기       간  | 2022.11 ~ 2022.12(1개월)<br>
   결       과  | 강의 성적 - `A+`  <br>
-  사용기술  | Microsoft Azure, JavaScript, HTML<br>
+  사용기술  | Microsoft Azure, JavaScript, HTML<br></br>
+
 
 * * *
 
-  </br></br>
 ### OVERVIEW
 Azure Media Services는 비디오 스트리밍을 구현하고 접근성과 배포를 향상시키며, 
 콘텐츠를 분석하는 등 여러 작업을 수행하는 솔루션을 빌드할 수 있게 하는 클라우드 기반 플랫폼이다.
