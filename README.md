@@ -18,7 +18,22 @@ Azure Media Services는 비디오 스트리밍을 구현하고 접근성과 배�
 </br>
 
 ### Features
-- 전통적인 MBTI 검사와 달리, 텍스트로 표현된 사용자 응답을 활용하여 MBTI 성격 유형 분석 및 예측
-- LSTM과 Bi-LSTM을 사용하여 5가지 Model 제안 및 비교
-- Pre-trained Model(KoGPT-2, GPT-4)을 활용한 Data Augmentation
-- 적은 양의 데이터 셋으로도 높은 예측 정확도를 보임  
+1. 스트리밍 서비스
+   <p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/b7c504ee-4c05-4a32-be39-9fb168d683b8"></p>
+</br>
+2. 동영상 리스트 표시
+<p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/b2527a6d-1826-4e63-928a-4f09b5250e22"></p>
+<p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/79050090-abe9-4980-9f32-9df840819e92"></p>
+<p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/b232ffea-f390-4770-bc14-9223a3a3cb2b"></p>
+
+</br>
+3. 동영상 추천 기능
+<p align="center"><img src="https://github.com/Hayeonggg/Streaming-Service-Azure-2022/assets/90309728/85398d98-bd66-4542-8e29-6ede06d6f0ae"></p>
+
+4. 사용자-댓글 기능
+
+<p align="center"><img src=""></p>
+<p align="center"><img src=""></p>
+<p align="center"><img src=""></p>
+<p align="center"><img src=""></p>
+<p align="center"><img src=""></p>
