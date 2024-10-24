@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <script src="dash.all.js"></script>
+        <title>Adaptive Streaming in HTML5</title>
+
+        
+        <!--link rel="stylesheet" href="C:\Users\blueb\dalee\style.css"-->
+        <link rel="stylesheet" href="style.css" type='text/css'>
+
+    </head>
+
+      <body onload="setupVideo()">
+        <h3 class="heading"> ~STREAMING SERVICE~</h3>
+        <script>
+            function setupVideo() {
+              var url1 = "https://hayeong1-koct1.streaming.media.azure.net/2fc6cb7c-c422-4ce2-b727-6953fad91887/mongja.ism/manifest(format=mpd-time-cmaf)";
+              var url2 = "https://hayeong1-koct1.streaming.media.azure.net/c28e050a-3f94-43d8-9cfe-4e9dc3a57440/makji.ism/manifest(format=mpd-time-cmaf)";
+              var url3 = "https://hayeong1-koct1.streaming.media.azure.net/dbe99c5e-2403-43e6-8f00-a07a18287066/pongki.ism/manifest(format=mpd-time-cmaf)";
+              var context = new Dash.di.DashContext();
+              var player = new MediaPlayer(context);
+                              player.startup();
+                              player.attachView(document.querySelector("#videoplayer1"));
+                              player.attachSource(url1);
+              var player = new MediaPlayer(context);
+                              player.startup();
+                              player.attachView(document.querySelector("#videoplayer2"));
+                              player.attachSource(url2);   
+              var player = new MediaPlayer(context);
+                              player.startup();
+                              player.attachView(document.querySelector("#videoplayer3"));
+                              player.attachSource(url3);            
+            }
+        </script>
+        
+        <div class="container">
+            <div class="main-video">
+                <div class="video">
+                    <video id="videoplayer1" controls muted auto play>
+                        <source src=url1
+                        type='video/mp4; codecs="avc1, mp4a"'>
+                    </video>
+                    <h3 class="title">01. Mongja</h3>
+                </div>
+            </div>
+
+            <div class="video-list">
+                <div class="vid active">
+                    <video id="videoplayer1" controls muted auto play>
+                        <source src=url1
+                        type='video/mp4; codecs="avc1, mp4a"'>
+                    </video>
+                    <h3 class="title">01. Mongja</h3>
+                    
+                </div>
+                <div class="vid">
+                    <video id="videoplayer2" controls muted auto play>
+                        <source src=url2
+                        type='video/mp4; codecs="avc1, mp4a"'>
+                    </video>
+                    <h3 class="title">02. Muji-Makji</h3>
+                </div>
+                <div class="vid">
+                    <video id="videoplayer3" controls muted auto play>
+                        <source src=url3
+                        type='video/mp4; codecs="avc1, mp4a"'>
+                    </video>
+                    <h3 class="title">03. Pongki</h3>
+                </div>
+                
+            </div>
+        </div>
+        <div id='container_a'></div>
+
+        <script>
+            let listVideo = document.querySelectorAll('.video-list .vid');
+            let mainVideo = document.querySelector('.main-video video');
+            let title = document.querySelector('.main-video .title');
+
+            listVideo.forEach(video =>{
+                video.onclick = () =>{
+                    listVideo.forEach(vid => vid.classList.remove('active'));
+                    video.classList.add('active');
+                    if(video.classList.contains('active')){
+                        let src = video.children[0].getAttribute('src');
+                        mainVideo.src = src;
+
+                        let text = video.children[1].innerHTML;
+                        title.innerHTML = text;
+                    }
+                }
+
+            });
+        </script>
+
+
+
+        <script>
+        function btnDisabled()  {
+            const target = document.getElementById('target_btn');
+            target.disabled = true;
+          }
+        function click()  {
+            const target = document.getElementById('target_btn');
+            alert("이 동영상을 좋아합니다.");
+            target.disabled = true;
+          }
+        </script>
+        <center>
+        <input id='target_btn' type='button' 
+        style=font-size:1.3em; border-radius:1em; 
+        value='(LIKE)'
+        onclick='btnDisabled()'/></center>
+
+   
+        
+            
+            
+        <!--form action="/action_page.php" method="get">
+            이름: <input type="text" name="ireum"><br>
+            주소: <input type="text" name="juso"><br>
+            <button type="submit">보내기</button>
+            <button type="submit" formtarget="_blank">새 창에서 열기</button>
+        </form-->
+
+        <div class="container">
+            <h2>Leave Us a Comment</h2>
+            <form>
+             <textarea placeholder='Name'></textarea>
+             <textarea placeholder='Add Your Comment'></textarea>
+              <div class="btn">
+                <input type="submit" value='Comment'>
+                <button id='clear' href='#'>Cancel</button>
+              </div>
+            </form>
+        </div>
+
+        <div class = 'commentBox'>
+            <div class='leftPanelImg'></div>
+            <div class='rightPanel'></div>
+
+
+        </div>
+
+
+        
+
+
+
+
+
+
+
+          <br /><br /><br /><br /><br />
+
+          <script src='C:\Users\blueb\dalee\script.js' type='text/javascript'></script>
+
+
+
+
+      </body>
+    </html>
+      
+
+                      
+    <style>
+        video {
+          width: 80%;
+          height: 80%;
+        }
+    </style>

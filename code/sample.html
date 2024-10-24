@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <script src="dash.all.js"></script>
+        <title>Adaptive Streaming in HTML5</title>
+    </head>
+
+      <body onload="setupVideo()">
+
+        <script>
+            // setup the video element and attach it to the Dash player
+            function setupVideo() {
+              var url1 = "https://hayeong1-koct1.streaming.media.azure.net/2fc6cb7c-c422-4ce2-b727-6953fad91887/mongja.ism/manifest(format=mpd-time-cmaf)";
+              //var url2 = "https://hayeong1-koct1.streaming.media.azure.net/c28e050a-3f94-43d8-9cfe-4e9dc3a57440/makji.ism/manifest(format=mpd-time-cmaf)";
+              var context = new Dash.di.DashContext();
+              var player = new MediaPlayer(context);
+                              player.startup();
+                              player.attachView(document.querySelector("#videoplayer"));
+                              player.attachSource(url1);
+            }
+        </script>
+
+
+        
+        <h1>   ~STREAMING~    </h1>
+        <video id="videoplayer" controls height="5" width="5">
+            <source src=url1
+            type='video/mp4; codecs="avc1, mp4a"'>
+            
+        </video>
+
+        </body>
+
+    </html>
+ 
+
+
+    <style>
+        video {
+          width: 80%;
+          height: 80%;
+        }
+    </style>
+
+    
